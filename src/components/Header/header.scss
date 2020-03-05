@@ -8,9 +8,66 @@ h1 {
   left: 0;
   width: 100%;
   height: 60px;
+}
+
+.button__design {
+  border-radius: 5px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(202, 71, 126);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  .close__button {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+}
+
+.open__button {
+  position: fixed;
+  top: 0;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__shadow {
+  height: 60px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slide-enter {
+  transform: translateY(-60px);
+}
+
+.slide-enter-active {
+  transform: translateY(0);
+  transition: all 500ms;
+}
+
+.slide-exit {
+  transform: translateY(0);
+}
+
+.slide-exit-active {
+  transform: translateY(-60px);
+  transition: all 500ms;
 }

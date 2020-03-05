@@ -4,7 +4,7 @@ import './App.scss';
 import Header from './components/Header';
 import Nav from './components/Nav';
 
-import Home from './routes/Home';
+import Home from './routes/Home/';
 import Edu from './routes/Edu';
 import Skills from './routes/Skills';
 import Me from './routes/Me';
