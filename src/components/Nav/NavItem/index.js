@@ -23,7 +23,10 @@ const NavItem = props => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="item__color"></div>
+        <div
+          className="item__color"
+          style={{ backgroundColor: props.color }}
+        ></div>
         <div className="item__name">
           <span>{props.name}</span>
         </div>

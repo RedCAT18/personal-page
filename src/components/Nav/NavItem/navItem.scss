@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+
 .item__container {
   transform: translateX(170px);
   background-color: white;
   margin-bottom: 15px;
-  width: 200px;
+  width: 210px;
   height: 45px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -14,13 +16,16 @@
     0 8px 6px 0px rgba(0, 0, 0, 0.3);
   .item__color {
     flex: 2;
-    background-color: pink;
+
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
   .item__name {
-    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 0;
+    padding-right: 10px;
     flex: 8;
+    font-size: 1rem;
     text-align: right;
   }
 }
