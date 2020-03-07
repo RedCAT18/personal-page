@@ -1,0 +1,14 @@
+.button__design {
+  background-color: #f4eeff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  color: #424874;
+  font-size: 18px;
+  font-weight: 100;
+  &:active {
+    transform: scale(0.98);
+  }
+}
