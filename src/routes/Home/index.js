@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <>
       <Container>
         <div className="home__content">
           <CSSTransition
@@ -46,7 +46,7 @@ const Home = () => {
           </CSSTransition>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 
