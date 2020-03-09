@@ -17,3 +17,41 @@ h1 {
     #ffeeee
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.home__button {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+}
+
+.home__panel {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+// animation
+
+.panel-scale-enter,
+.panel-scale-exit-done {
+  transform-origin: bottom left;
+  transform: scale(0);
+}
+
+.panel-scale-enter.panel-scale-enter-active {
+  transform-origin: bottom left;
+  transform: scale(1);
+  transition: all 700ms ease-out;
+}
+
+.panel-scale-exit,
+.panel-scale-enter-done {
+  transform-origin: bottom left;
+  transform: scale(1);
+}
+
+.panel-scale-exit.panel-scale-exit-active {
+  transform-origin: bottom left;
+  transform: scale(0);
+  transition: all 700ms ease-out;
+}

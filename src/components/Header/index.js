@@ -18,7 +18,7 @@ const Header = () => {
         <div className="header__container">
           Header
           <div className="open__button header__shadow">
-            <button className="button__design" onClick={toggleShow}>
+            <button className="header__button" onClick={toggleShow}>
               <FontAwesomeIcon icon={faChevronDown} />
             </button>
           </div>
