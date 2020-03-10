@@ -46,6 +46,7 @@ const Home = () => {
             </div>
           </CSSTransition>
         </div>
+        <div className="home__background"></div>
       </Container>
     </>
   );

@@ -33,3 +33,27 @@
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
+
+.item-appear,
+.item-enter,
+.item-exit-done {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.item-enter.item-enter-active,
+.item-appear.item-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 1200ms;
+}
+.item-exit,
+.item-enter-done,
+.item-appear-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+.item-exit.item-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1200ms;
+}
