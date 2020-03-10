@@ -4,7 +4,7 @@ h1 {
 
 .home__content {
   height: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
   background: #ffeeee; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -17,6 +17,11 @@ h1 {
     #ffeeee
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   // position: relative;
+  h1 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 40px;
+  }
 }
 
 .home__button {

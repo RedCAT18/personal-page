@@ -1,5 +1,6 @@
 export const homeData = {
   title: 'Personal Statement',
-  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum justo sem, at mattis nisl aliquet eget. Phasellus id efficitur quam. Curabitur quis tempor libero. Mauris volutpat, risus quis sagittis vehicula, nisi orci cursus eros, in fermentum quam magna eget libero. Vestibulum orci est, aliquam id accumsan a, aliquam volutpat justo. Maecenas nec sollicitudin tellus. Ut suscipit nisl sed luctus sagittis. Vestibulum sit amet est mauris. Donec accumsan vel justo ut bibendum.
-  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut scelerisque sit amet tellus ac blandit. Mauris at mi vel metus dapibus dictum a vitae ex. Vestibulum volutpat dui at venenatis lacinia. Donec condimentum orci turpis, eget interdum diam lacinia in. Nunc nec sem quis libero tincidunt fermentum a vulputate velit. Donec accumsan erat nisi, id lobortis turpis viverra sit amet. Pellentesque porta est ut condimentum viverra. Nam euismod odio vitae iaculis semper. Nam eleifend sem in mauris feugiat, vel dignissim metus viverra. Maecenas et purus blandit, efficitur diam et, faucibus nisl. Sed bibendum arcu sed rutrum ullamcorper.`
+  description: `After finishing my studies, I am trying to get new opportunities as a developer in New Zealand. Getting started in a new place is always difficult, but I'm trying to prepare more thoroughly.
+  
+  It is very attractive to encounter, ponder, and create something new. It requires not only knowledge but various experience and perspectives. That is the biggest reason why I have chosen the way of the developer. And now I am looking for a place to realize that.`
 };

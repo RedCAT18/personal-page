@@ -1,6 +1,6 @@
 .skills__container {
   height: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: #ecfafa;
   background-image: url('../../assets/DbwYNr8RPbg.jpg');
   background-position: -10% 0;
@@ -10,6 +10,9 @@
   flex-direction: column;
   h1 {
     margin-left: 40px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
   }
 }
 
@@ -17,4 +20,16 @@
   display: flex;
   flex-direction: column;
   margin-left: 80px;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    align-items: center;
+  }
+}
+
+.skills__item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
