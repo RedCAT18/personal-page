@@ -12,7 +12,7 @@ const Skills = () => {
   document.addEventListener('scroll', () => {
     let y = window.scrollY;
     let height = window.innerHeight;
-    if (y > 1024 - height * 0.7) {
+    if (height * 0.4 < y) {
       setShow(true);
     } else {
       setShow(false);
@@ -22,7 +22,9 @@ const Skills = () => {
   return (
     <Container>
       <div className="skills__container">
-        <h1>Skills & Abilities</h1>
+        <div className="skills__title">
+          <h1>Skills & Abilities</h1>
+        </div>
         <div className="skills__content">
           {skillsData?.map(data => (
             <CSSTransition
