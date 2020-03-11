@@ -12,7 +12,7 @@ const Skills = () => {
   document.addEventListener('scroll', () => {
     let y = window.scrollY;
     let height = window.innerHeight;
-    if (y > 1024 - height / 3) {
+    if (y > 1024 - height * 0.7) {
       setShow(true);
     } else {
       setShow(false);
@@ -27,7 +27,7 @@ const Skills = () => {
           {skillsData?.map(data => (
             <CSSTransition
               in={show}
-              timeout={data.id * 300}
+              timeout={data.id * 400}
               classNames="item"
               appear
               key={data.id}
