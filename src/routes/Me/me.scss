@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+
+.me__container {
+  position: relative;
+  background-color: #f8ffd6;
+  min-height: 100vh;
+  .me__background {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    width: 100%;
+    background-image: url('../../assets//CMoFsPfso.jpg');
+    background-size: cover;
+    opacity: 0.7;
+  }
+}
+
+.me__content {
+  position: absolute;
+  top: 20vh;
+  right: 10%;
+  min-width: 30vw;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: #ffffff;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.me__title {
+  background-color: #fffd76;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  h1 {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+}
+
+.me__desc {
+  margin: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 5px 10px;
+    padding: 5px 10px;
+  }
+  .me__question {
+    text-align: left;
+    border-bottom: 1px solid #ffec3d;
+  }
+  .me__answer {
+    text-align: right;
+    font-weight: 400;
+    background-color: #f8ffd6;
+  }
+}

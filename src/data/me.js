@@ -2,7 +2,7 @@ export const me = {
   name: 'Kayoung Erica Seo',
   live: 'Auckland, NZ',
   visa: 'Post-study(~2023)',
-  pob: 'Seoul, KR',
+  pob: 'South Korea',
   lang: 'Korean, English',
   love: 'Video Games, Drawing, Coffee, Traveling, Cats and Dogs'
 };
