@@ -39,6 +39,9 @@ h1 {
   bottom: 160px;
   left: 80px;
   z-index: 1;
+  @media screen and (max-width: 768px) {
+    left: 40px;
+  }
 }
 
 .home__panel {
@@ -46,6 +49,12 @@ h1 {
   bottom: 150px;
   left: 80px;
   z-index: 1;
+  max-width: 70%;
+  @media screen and (max-width: 768px) {
+    left: 40px;
+    bottom: 40px;
+    max-width: 80%;
+  }
 }
 
 // animation
