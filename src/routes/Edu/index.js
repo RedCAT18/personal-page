@@ -14,7 +14,7 @@ const Edu = () => {
   document.addEventListener('scroll', () => {
     let y = window.scrollY;
     let height = window.innerHeight;
-    console.log(y, height);
+
     if (height * 1.6 < y) {
       setEduShow(true);
     } else {
@@ -23,7 +23,7 @@ const Edu = () => {
   });
 
   return (
-    <Container>
+    <Container id="edu">
       <div className="ee__content">
         <div className="ee__title">
           <h1>Education & Experiences</h1>
@@ -63,8 +63,8 @@ const Edu = () => {
                         {data.position} | {data.period}
                       </h3>
                       <div className="exp__desc">
-                        {data.description.map(desc => (
-                          <p>{desc}</p>
+                        {data.description.map((desc, idx) => (
+                          <p key={idx}>{desc}</p>
                         ))}
                       </div>
                     </div>

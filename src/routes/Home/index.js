@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <Container>
+      <Container id="home">
         <div className="home__content">
           <h1>A Cat On Mars</h1>
           <CSSTransition

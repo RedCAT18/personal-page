@@ -8,9 +8,9 @@ import Board from '../../components/Board';
 
 const Me = () => {
   return (
-    <Container>
-      <div class="me__container">
-        <div class="me__background"></div>
+    <Container id="me">
+      <div className="me__container">
+        <div className="me__background"></div>
         <Board>
           <div className="me__content">
             <div className="me__title">

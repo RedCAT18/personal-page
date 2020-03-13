@@ -4,12 +4,18 @@ import './navItem.scss';
 
 const NavItem = props => {
   const [show, setShow] = useState(false);
+
   const handleMouseEnter = () => {
     setShow(true);
   };
 
   const handleMouseLeave = () => {
     setShow(false);
+  };
+
+  const movePage = path => {
+    let page = document.getElementById(path);
+    page.scrollIntoView({ behavior: 'smooth', block: 'end' });
   };
 
   return (
@@ -22,6 +28,7 @@ const NavItem = props => {
         className="item__container"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={() => movePage(props.path)}
       >
         <div
           className="item__color"
