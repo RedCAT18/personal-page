@@ -19,7 +19,13 @@ const Home = () => {
     <>
       <Container id="home">
         <div className="home__content">
-          <h1>A Cat On Mars</h1>
+          <div className="home__image">
+            <div className="home__image-layout">
+              <h1 className="home__image-text first-text">Thinker</h1>
+              <h1 className="home__image-text second-text">Builder</h1>
+              <h1 className="home__image-text third-text">Creater</h1>
+            </div>
+          </div>
           <CSSTransition
             in={!openPanel}
             timeout={700}

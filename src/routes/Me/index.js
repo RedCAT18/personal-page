@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import './me.scss';
 
 import { me } from '../../data/me';
@@ -7,29 +8,49 @@ import Container from '../../components/Container';
 import Board from '../../components/Board';
 
 const Me = () => {
+  const [showMe, setShowMe] = useState(false);
+
+  document.addEventListener('scroll', () => {
+    let y = window.scrollY;
+    let height = window.innerHeight;
+
+    if (height * 2.6 < y) {
+      setShowMe(true);
+    } else {
+      setShowMe(false);
+    }
+  });
   return (
     <Container id="me">
       <div className="me__container">
         <div className="me__background"></div>
-        <Board>
-          <div className="me__content">
-            <div className="me__title">
-              <h1>{me.name}</h1>
+        <CSSTransition
+          in={showMe}
+          timeout={800}
+          classNames="slideIn"
+          unmountOnExit
+          mountOnEnter
+        >
+          <Board>
+            <div className="me__content">
+              <div className="me__title">
+                <h1>{me.name}</h1>
+              </div>
+              <div className="me__desc">
+                <p className="me__question">Where?</p>
+                <p className="me__answer">{me.live}</p>
+                <p className="me__question">Visa?</p>
+                <p className="me__answer">{me.visa}</p>
+                <p className="me__question">Nationality?</p>
+                <p className="me__answer">{me.pob}</p>
+                <p className="me__question">Languages?</p>
+                <p className="me__answer">{me.lang}</p>
+                <p className="me__question">Love?</p>
+                <p className="me__answer">{me.love}</p>
+              </div>
             </div>
-            <div className="me__desc">
-              <p className="me__question">Where?</p>
-              <p className="me__answer">{me.live}</p>
-              <p className="me__question">Visa?</p>
-              <p className="me__answer">{me.visa}</p>
-              <p className="me__question">Nationality?</p>
-              <p className="me__answer">{me.pob}</p>
-              <p className="me__question">Languages?</p>
-              <p className="me__answer">{me.lang}</p>
-              <p className="me__question">Love?</p>
-              <p className="me__answer">{me.love}</p>
-            </div>
-          </div>
-        </Board>
+          </Board>
+        </CSSTransition>
       </div>
     </Container>
   );

@@ -59,3 +59,20 @@
     background-color: #f8ffd6;
   }
 }
+
+.slideIn-enter,
+.slideIn-exit-done {
+  transform: translateX(150%);
+}
+.slideIn-enter.slideIn-enter-active {
+  transform: translateX(50%);
+  transition: all 800ms ease-out;
+}
+.slideIn-exit,
+.slideIn-enter-done {
+  transform: translateX(50%);
+}
+.slideIn-exit.slideIn-exit-active {
+  transform: translateX(150%);
+  transition: all 800ms ease-out;
+}
