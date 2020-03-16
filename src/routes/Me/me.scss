@@ -15,10 +15,17 @@
   }
 }
 
-.me__content {
+.me__boards {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
   position: absolute;
   top: 20vh;
   right: 10%;
+}
+
+.me__content {
+  padding-top: 10px;
   min-width: 30vw;
   border-radius: 10px;
   z-index: 1;
@@ -32,7 +39,7 @@
 .me__title {
   background-color: #fffd76;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
   h1 {
     font-size: 24px;
@@ -41,6 +48,7 @@
 }
 
 .me__desc {
+  padding-bottom: 20px;
   margin: 20px;
   margin-bottom: 40px;
   display: flex;
@@ -65,12 +73,12 @@
   transform: translateX(150%);
 }
 .slideIn-enter.slideIn-enter-active {
-  transform: translateX(50%);
+  transform: translateX(0);
   transition: all 800ms ease-out;
 }
 .slideIn-exit,
 .slideIn-enter-done {
-  transform: translateX(50%);
+  transform: translateX(0);
 }
 .slideIn-exit.slideIn-exit-active {
   transform: translateX(150%);

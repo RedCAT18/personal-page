@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-$random1: random(65);
-$random2: random(65);
-$random3: random(65);
-
-h1 {
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
 
 .home__content {
   height: 100vh;
@@ -22,12 +14,12 @@ h1 {
     #ffeeee
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: relative;
-  h1 {
-    font-weight: 400;
-    font-size: 30px;
-    margin-left: 40px;
-    margin-top: 80px;
-  }
+  // h1 {
+  //   font-weight: 400;
+  //   font-size: 30px;
+  //   margin-left: 40px;
+  //   margin-top: 80px;
+  // }
 }
 
 .home__image {
@@ -43,25 +35,33 @@ h1 {
   z-index: 1;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  overflow: hidden;
   .home__image-layout {
+    @media screen and (max-width: 900px) {
+      transform-origin: 20% 20%;
+    }
+    @media screen and (min-width: 1280px) {
+      transform-origin: 20% 60%;
+    }
     padding: 100px 20px;
-
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+    mix-blend-mode: overlay;
+    @for $i from 1 through 3 {
+      .home__image-text:nth-child(#{$i}) {
+        margin-left: (150 * $i) - 100 + px;
+      }
+    }
     .home__image-text {
       color: white;
-      font-family: 'Permanent Marker', cursive;
-      font-size: 36px;
-      margin: 0;
-      margin-top: 100px;
-      margin-bottom: 150px;
-    }
-    .first-text {
-      margin-left: percentage($random1 / 100);
-    }
-    .second-text {
-      margin-left: percentage($random2 / 100);
-    }
-    .third-text {
-      margin-left: percentage($random3 / 100);
+      font-weight: 800;
+      font-size: 100px;
+      margin-top: 0;
+      margin-bottom: 0;
+      opacity: 0.8;
+      // @media screen and (min-width: 1280px) {
+      //   font-size: 120px;
+      // }
     }
   }
 }
@@ -93,7 +93,8 @@ h1 {
   bottom: 150px;
   left: 80px;
   z-index: 1;
-  max-width: 70%;
+  max-width: 60%;
+  font-family: 'Raleway', sans-serif;
   @media screen and (max-width: 768px) {
     left: 40px;
     bottom: 40px;

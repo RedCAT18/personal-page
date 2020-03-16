@@ -31,25 +31,36 @@ const Me = () => {
           unmountOnExit
           mountOnEnter
         >
-          <Board>
-            <div className="me__content">
-              <div className="me__title">
-                <h1>{me.name}</h1>
+          <div class="me__boards">
+            <Board>
+              <div className="me__content">
+                <div className="me__title">
+                  <h1>{me.name}</h1>
+                </div>
+                <div className="me__desc">
+                  <p className="me__question">Where?</p>
+                  <p className="me__answer">{me.live}</p>
+                  <p className="me__question">Nationality?</p>
+                  <p className="me__answer">{me.pob}</p>
+                  <p className="me__question">Languages?</p>
+                  <p className="me__answer">{me.lang}</p>
+                  <p className="me__question">Love?</p>
+                  <p className="me__answer">{me.love}</p>
+                </div>
               </div>
-              <div className="me__desc">
-                <p className="me__question">Where?</p>
-                <p className="me__answer">{me.live}</p>
-                <p className="me__question">Visa?</p>
-                <p className="me__answer">{me.visa}</p>
-                <p className="me__question">Nationality?</p>
-                <p className="me__answer">{me.pob}</p>
-                <p className="me__question">Languages?</p>
-                <p className="me__answer">{me.lang}</p>
-                <p className="me__question">Love?</p>
-                <p className="me__answer">{me.love}</p>
+            </Board>
+            <Board>
+              <div className="me__content">
+                <div className="me__title">
+                  <h1>Contact</h1>
+                </div>
+                <div className="me__desc">
+                  <p className="me__question">E-Mail</p>
+                  <p className="me__answer">{me.email}</p>
+                </div>
               </div>
-            </div>
-          </Board>
+            </Board>
+          </div>
         </CSSTransition>
       </div>
     </Container>

@@ -1,10 +1,10 @@
 export const me = {
   name: 'Kayoung Erica Seo',
   live: 'Auckland, NZ',
-  visa: 'Post-study(~2023)',
   pob: 'South Korea',
   lang: 'Korean, English',
-  love: 'Video Games, Drawing, Coffee, Traveling, Cats and Dogs'
+  love: 'Video Games, Drawing, Coffee, Traveling, Cats and Dogs',
+  email: 'kayoung.seo.82@gmail.com'
 };
 
 export const sns = [
