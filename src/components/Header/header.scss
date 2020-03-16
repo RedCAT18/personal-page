@@ -15,7 +15,7 @@ h1 {
   border: none;
   width: 60px;
   height: 30px;
-  background-color: rgb(202, 71, 126);
+  background-color: #ad62aa;
   color: white;
   font-size: 1rem;
   outline: none;
@@ -28,10 +28,35 @@ h1 {
   background-color: white;
   height: 60px;
   position: relative;
+  margin: auto;
+}
+
+.header__contents {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  .header__title {
+    padding-left: 40px;
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      color: #ad62aa;
+    }
+  }
+  .header__icons {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    color: #ad62aa;
+    a {
+      color: inherit;
+    }
+    svg {
+      margin: 10px;
+    }
+  }
 }
 
 .open__button {

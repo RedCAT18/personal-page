@@ -31,21 +31,23 @@ const Me = () => {
           unmountOnExit
           mountOnEnter
         >
-          <div class="me__boards">
+          <div className="me__boards">
             <Board>
               <div className="me__content">
                 <div className="me__title">
                   <h1>{me.name}</h1>
                 </div>
                 <div className="me__desc">
-                  <p className="me__question">Where?</p>
-                  <p className="me__answer">{me.live}</p>
-                  <p className="me__question">Nationality?</p>
-                  <p className="me__answer">{me.pob}</p>
-                  <p className="me__question">Languages?</p>
-                  <p className="me__answer">{me.lang}</p>
-                  <p className="me__question">Love?</p>
-                  <p className="me__answer">{me.love}</p>
+                  {Object.keys(me).map(key => {
+                    const avoid = ['name', 'email', 'discord'];
+                    if (avoid.includes(key)) return null;
+                    return (
+                      <div key={key}>
+                        <p className="me__question">{key}?</p>
+                        <p className="me__answer">{me[key]}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </Board>
@@ -57,6 +59,8 @@ const Me = () => {
                 <div className="me__desc">
                   <p className="me__question">E-Mail</p>
                   <p className="me__answer">{me.email}</p>
+                  <p className="me__question">Discord</p>
+                  <p className="me__answer">{me.discord}</p>
                 </div>
               </div>
             </Board>
