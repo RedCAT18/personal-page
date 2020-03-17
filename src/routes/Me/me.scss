@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
 
 .me__container {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   position: relative;
@@ -48,7 +49,6 @@
 }
 
 .me__boards {
-  overflow: hidden;
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -99,6 +99,7 @@
   }
   .me__question {
     text-align: left;
+    font-size: 14px;
     border-bottom: 1px solid #ffec3d;
   }
   .me__answer {

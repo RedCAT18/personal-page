@@ -29,7 +29,7 @@ const Skills = () => {
           {skillsData?.map(data => (
             <CSSTransition
               in={show}
-              timeout={data.id * 400}
+              timeout={data.id * 500}
               classNames="item"
               appear
               key={data.id}

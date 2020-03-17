@@ -54,7 +54,7 @@ const Edu = () => {
             </Board>
             <Board>
               <div className="exp__container">
-                <h1>Experiences</h1>
+                <h1>Experiences (Relavant only)</h1>
                 {careerData?.map(data => (
                   <Card key={data.id}>
                     <div className="exp__content">

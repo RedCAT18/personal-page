@@ -66,6 +66,7 @@
     font-weight: 100;
   }
   h1 {
+    font-size: 18px;
     font-weight: 400;
     font-size: 24px;
     color: #23a1c4;
@@ -91,7 +92,7 @@
 .item-appear.item-appear-active {
   opacity: 1;
   transform: translateX(0);
-  transition: all 1000ms ease-out;
+  transition: all 2000ms;
 }
 .item-exit,
 .item-enter-done,
@@ -102,5 +103,5 @@
 .item-exit.item-exit-active {
   opacity: 0;
   transform: translateX(-100%);
-  transition: all 1000ms ease-out;
+  transition: all 2000ms;
 }
