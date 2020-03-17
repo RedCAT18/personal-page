@@ -34,7 +34,7 @@ const Home = () => {
           >
             <div className="home__button">
               <Button color={'dark'} comm={'open'} handleClick={handlePanel}>
-                I am...
+                Greeting
               </Button>
             </div>
           </CSSTransition>

@@ -41,7 +41,7 @@ const Header = () => {
         <div className="header__container">
           <div className="header__contents">
             <div className="header__title">
-              <h1>Title</h1>
+              <h1>Kayoung Erica Seo</h1>
             </div>
             <div className="header__icons">
               {sns?.map(s => (

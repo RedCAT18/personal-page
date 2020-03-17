@@ -23,15 +23,22 @@ const Me = () => {
   return (
     <Container id="me">
       <div className="me__container">
-        <div className="me__background"></div>
-        <CSSTransition
-          in={showMe}
-          timeout={800}
-          classNames="slideIn"
-          unmountOnExit
-          mountOnEnter
-        >
-          <div className="me__boards">
+        <div className="me__narrowTitle">
+          <h1>About Me</h1>
+        </div>
+        <div className="me__background">
+          <div className="me__pageTitle">
+            <h1>About Me</h1>
+          </div>
+        </div>
+        <div className="me__boards">
+          <CSSTransition
+            in={showMe}
+            timeout={1600}
+            classNames="slowSlideIn"
+            unmountOnExit
+            mountOnEnter
+          >
             <Board>
               <div className="me__content">
                 <div className="me__title">
@@ -51,6 +58,14 @@ const Me = () => {
                 </div>
               </div>
             </Board>
+          </CSSTransition>
+          <CSSTransition
+            in={showMe}
+            timeout={800}
+            classNames="slideIn"
+            unmountOnExit
+            mountOnEnter
+          >
             <Board>
               <div className="me__content">
                 <div className="me__title">
@@ -64,8 +79,8 @@ const Me = () => {
                 </div>
               </div>
             </Board>
-          </div>
-        </CSSTransition>
+          </CSSTransition>
+        </div>
       </div>
     </Container>
   );

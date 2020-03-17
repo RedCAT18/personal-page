@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 .home__content {
   height: 100vh;
@@ -36,17 +37,22 @@
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   overflow: hidden;
+  @media screen and (min-width: 1280px) {
+    width: 35vw;
+  }
+
   .home__image-layout {
     @media screen and (max-width: 900px) {
       transform-origin: 20% 20%;
     }
     @media screen and (min-width: 1280px) {
-      transform-origin: 20% 60%;
+      transform-origin: 20% 50%;
     }
     padding: 100px 20px;
     transform: rotate(45deg);
-    transform-origin: 20% 40%;
+    transform-origin: 20% 20%;
     mix-blend-mode: overlay;
+    font-family: 'Black Ops One', cursive;
     @for $i from 1 through 3 {
       .home__image-text:nth-child(#{$i}) {
         margin-left: (150 * $i) - 100 + px;
@@ -59,9 +65,6 @@
       margin-top: 0;
       margin-bottom: 0;
       opacity: 0.8;
-      // @media screen and (min-width: 1280px) {
-      //   font-size: 120px;
-      // }
     }
   }
 }

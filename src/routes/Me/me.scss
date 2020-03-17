@@ -1,27 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap');
 
 .me__container {
+  display: flex;
+  justify-content: center;
   position: relative;
   background-color: #f8ffd6;
   min-height: 100vh;
+  .me__narrowTitle {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+      h1 {
+        padding-top: 20px;
+        font-size: 48px;
+        font-weight: 700;
+        padding-left: 80px;
+        margin: 0;
+        color: #ffee51;
+      }
+    }
+  }
+
   .me__background {
     position: absolute;
     top: 30%;
     height: 40%;
     width: 100%;
-    background-image: url('../../assets//CMoFsPfso.jpg');
+    background-image: url('../../assets/CMoFsPfso.jpg');
     background-size: cover;
     opacity: 0.7;
+    .me__pageTitle {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+      position: absolute;
+      top: 0;
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        padding-left: 80px;
+        margin: 0;
+        color: #f8ffd6;
+      }
+    }
   }
 }
 
 .me__boards {
+  overflow: hidden;
+  margin: auto;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
   position: absolute;
-  top: 20vh;
-  right: 10%;
+  top: 30vh;
+  // right: 10vw;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .me__content {
@@ -72,15 +112,36 @@
 .slideIn-exit-done {
   transform: translateX(150%);
 }
+
+.slowSlideIn-enter,
+.slowSlideIn-exit-done {
+  transform: translateX(250%);
+}
+
 .slideIn-enter.slideIn-enter-active {
   transform: translateX(0);
   transition: all 800ms ease-out;
 }
+
+.slowSlideIn-enter.slowSlideIn-enter-active {
+  transform: translateX(0);
+
+  transition: all 1600ms ease-out 0.8s;
+}
+
 .slideIn-exit,
-.slideIn-enter-done {
+.slowSlideIn-exit,
+.slideIn-enter-done,
+.slowSlideIn-enter-done {
   transform: translateX(0);
 }
 .slideIn-exit.slideIn-exit-active {
   transform: translateX(150%);
-  transition: all 800ms ease-out;
+  transition: all 800ms ease-in;
+}
+
+.slowSlideIn-exit.slowSlideIn-exit-active {
+  transform: translateX(250%);
+
+  transition: all 1600ms ease-in 0.8s;
 }
