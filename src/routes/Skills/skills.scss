@@ -1,7 +1,7 @@
 .skills__container {
   height: 100%;
   min-height: 100vh;
-  padding-top: 60px;
+
   background-color: #ecfafa;
   background-image: url('../../assets/DbwYNr8RPbg.jpg');
   background-position: -10% 0;
@@ -44,6 +44,7 @@
 }
 
 .skills__content {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   margin-left: 80px;

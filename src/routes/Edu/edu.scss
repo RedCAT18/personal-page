@@ -2,13 +2,14 @@
 
 .ee__content {
   min-height: 100vh;
-  padding-top: 60px;
+
   background-image: url('../../assets/w6OniVDCfn0.jpg');
   background-size: cover;
   background-color: #ffdaf9;
 }
 
 .ee__title {
+  margin-top: 60px;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -96,7 +97,7 @@
   p {
     font-size: 14px;
     font-weight: 100;
-    text-indent: 10px;
+    padding-left: 10px;
   }
 }
 

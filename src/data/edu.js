@@ -29,9 +29,9 @@ export const careerData = [
     period: 'MAY 2007 ~ APRIL 2008 (INCLUDING 3 MONTHS OF INTERNSHIP)',
     position: 'GRAPHIC DESIGNER ',
     description: [
-      '·	Participation in several mobile game projects.',
-      '·	Making graphic resources including user interface.',
-      '·	Design characters and enviromnental backgrounds in games.'
+      'Participation in several mobile game projects.',
+      'Making graphic resources including user interface.',
+      'Design characters and enviromnental backgrounds in games.'
     ]
   }
 ];
